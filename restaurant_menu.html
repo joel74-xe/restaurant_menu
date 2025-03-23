@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+        }
+        #header-img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            margin: 20px;
+        }
+        article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px auto;
+            width: 50%;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            text-align: left;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="header-img" src="https://i.etsystatic.com/11979725/r/il/525bbf/1431687846/il_fullxfull.1431687846_eagl.jpg" >
+        <h1>Delicious Bites</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order-form">Place Your Order</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="https://th.bing.com/th/id/OIP.UPd_kTAqtmgj0gt-vuLHQwHaHU?rs=1&pid=ImgDetMain" alt="Cheeseburger">
+                <h3>Classic Cheeseburger</h3>
+                <p><i>A juicy beef patty with melted cheese, lettuce, tomato, and special sauce. $8.99</i></p>
+            </article>
+            <article>
+                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/07/margherita-pizza-recipe.jpg" alt="Margherita Pizza">
+                <h3>Margherita Pizza</h3>
+                <p><i>Classic Italian pizza topped with fresh tomatoes, basil, and mozzarella. $12.99</i></p>
+            </article>
+            <article>
+                <img src="https://th.bing.com/th/id/OIP.z9ChSVC_HzFo6LYlc7srHAHaHT?rs=1&pid=ImgDetMain" alt="Pasta Alfredo">
+                <h3>Creamy Alfredo Pasta</h3>
+                <p><i>Delicious fettuccine pasta with a rich Alfredo sauce and parmesan. $10.99</i></p>
+            </article>
+        </section>
+        
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="burger-qty">Cheeseburger:</label>
+                <input type="number" id="burger-qty" name="burger-qty" min="0" value="0"><br><br>
+                
+                <label for="pizza-qty">Margherita Pizza:</label>
+                <input type="number" id="pizza-qty" name="pizza-qty" min="0" value="0"><br><br>
+                
+                <label for="pasta-qty">Creamy Alfredo Pasta:</label>
+                <input type="number" id="pasta-qty" name="pasta-qty" min="0" value="0"><br><br>
+                
+                <p><b>Select Sides:</b></p>
+                <input type="checkbox" id="fries" name="sides" value="Fries">
+                <label for="fries">French Fries</label>
+                <input type="checkbox" id="salad" name="sides" value="Salad">
+                <label for="salad">Garden Salad</label><br>
+                
+                <p><b>Choose a Drink:</b></p>
+                <input type="radio" id="soda" name="drink" value="Soda">
+                <label for="soda">Soda</label>
+                <input type="radio" id="juice" name="drink" value="Juice">
+                <label for="juice">Juice</label>
+                <input type="radio" id="water" name="drink" value="Water">
+                <label for="water">Water</label><br><br>
+                
+                <label for="special-requests"><b>Special Requests:</b></label><br><br>
+                <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea><br>
+                
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Made with love by @joel30......</p>
+    </footer>
+</body>
+</html>
